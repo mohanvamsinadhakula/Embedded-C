@@ -3,43 +3,15 @@
 
 ## 1. What is the difference between Normal C and Embedded C?
 
-  ---------------------------------------------------------------------------------
-  Aspect             Normal C                       Embedded C
-  ------------------ ------------------------------ -------------------------------
-  **Purpose**        General-purpose programming    Specially used for programming
-                     for desktop/laptop             microcontrollers and embedded
-                     applications.                  systems.
-
-  **Execution        Runs on operating systems like Runs directly on hardware
-  Environment**      Windows, Linux, macOS.         without an OS (bare-metal) or
-                                                    with a small RTOS.
-
-  **Compiler**       Compilers generate code for    Compilers generate code for
-                     general-purpose CPUs (e.g.,    microcontroller architectures
-                     GCC for x86/x64).              (e.g., Keil for ARM, MPLAB for
-                                                    PIC).
-
-  **Libraries**      Uses standard libraries like   Uses hardware-specific
-                     stdio.h, stdlib.h for          libraries and headers to
-                     input/output, file handling,   control peripherals (e.g.,
-                     etc.                           GPIO, UART, ADC).
-
-  **Input/Output**   Uses devices like keyboard,    I/O happens through
-                     mouse, display, and files for  microcontroller ports, sensors,
-                     I/O.                           actuators, and other hardware.
-
-  **Memory           Large memory available;        Very limited RAM/ROM; memory
-  Management**       dynamic memory allocation is   must be used efficiently, often
-                     common.                        avoiding dynamic allocation.
-
-  **Programming      More abstract and portable     Hardware-dependent; code is
-  Style**            across devices.                tightly coupled with the
-                                                    microcontroller's registers and
-                                                    datasheet.
-
-  **Examples**       Writing a text editor, web     Writing code for LED blinking,
-                     application, or calculator     motor control, or sensor data
-                     program.                       reading.
-  ---------------------------------------------------------------------------------
+| Aspect                | Normal C                                                                  | Embedded C                                                                    |
+|-----------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------   |
+| **Purpose**           | General-purpose programming for desktop/laptop applications.              | Specially used for programming microcontrollers and embedded systems.         |
+| **Execution Environment** | Runs on operating systems like Windows, Linux, macOS.                 | Runs directly on hardware without an OS (bare-metal) or with a small RTOS.    |
+| **Compiler**          | Compilers generate code for general-purpose CPUs (e.g., GCC for x86/x64). | Compilers generate code for microcontroller architectures (e.g., Keil for ARM, MPLAB for PIC). |
+| **Libraries**         | Uses standard libraries like stdio.h, stdlib.h for input/output, file handling, etc. | Uses hardware-specific libraries and headers to control peripherals (e.g., GPIO, UART, ADC). |
+| **Input/Output**      | Uses devices like keyboard, mouse, display, and files for I/O.            | I/O happens through microcontroller ports, sensors, actuators, and other hardware. |
+| **Memory Management** | Large memory available; dynamic memory allocation is common.              | Very limited RAM/ROM; memory must be used efficiently, often avoiding dynamic allocation. |
+| **Programming Style** | More abstract and portable across devices.                                | Hardware-dependent; code is tightly coupled with the microcontroller’s registers and datasheet. |
+| **Examples**          | Writing a text editor, web application, or calculator program.            | Writing code for LED blinking, motor control, or sensor data reading. |
 
 ------------------------------------------------------------------------
