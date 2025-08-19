@@ -15,7 +15,7 @@
 | **Examples**          | Writing a text editor, web application, or calculator program.            | Writing code for LED blinking, motor control, or sensor data reading. |
 
 ------------------------------------------------------------------------
-# What are the Basic Elements of C Language
+# 2. What are the Basic Elements of C Language
 
 The C programming language is built upon several fundamental elements. These elements form the foundation for writing and understanding C programs.
 
