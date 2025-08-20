@@ -120,4 +120,4 @@ These characters are not directly visible but control formatting, spacing, or cu
 - While characters like `\v` and `\f` exist, they are rarely used in modern embedded systems.  
 - Octal (`\ooo`) and Hex (`\xhh`) escape forms are particularly useful when dealing with **non-printable control characters** in protocols or hardware communication.  
 
-
+----
